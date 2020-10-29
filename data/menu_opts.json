@@ -1,0 +1,47 @@
+{
+    "nombreApp" : "Componentes",
+    "rutas" : [
+        {
+            "ruta" : "login",
+            "icon" : "login",
+            "texto": "Login"
+        },
+        {
+            "ruta" : "cuenta",
+            "icon" : "account_circle",
+            "texto": "Cuentas"
+        },
+        {
+            "ruta" : "home",
+            "icon" : "add_to_home_screen",
+            "texto": "Home"
+        },
+        {
+            "ruta" : "monitoreo",
+            "icon" : "car_repair",
+            "texto": "Monitoreo"
+        },
+        {
+            "ruta" : "completo",
+            "icon" : "completo",
+            "texto": "Completo"
+        },
+        {
+            "ruta" : "componentes",
+            "icon" : "monitor",
+            "texto": "Componentes"
+        },
+        {
+            "ruta" : "información",
+            "icon" : "info_outline",
+            "texto": "Información"
+        },
+        {
+            "ruta" : "autoayuda",
+            "icon" : "help",
+            "texto": "Autoayuda"
+        }
+
+
+    ]
+}
