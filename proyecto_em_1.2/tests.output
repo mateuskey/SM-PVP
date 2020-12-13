@@ -1,0 +1,13 @@
+{"protocolVersion":"0.1.1","runnerVersion":null,"pid":93575,"type":"start","time":0}
+{"suite":{"id":0,"platform":"vm","path":"/Users/mateusflores/Desktop/Flutter/Proyecto_APP_EMULADOR/proyecto_em/test/home_servicio/login_test.dart"},"type":"suite","time":0}
+{"test":{"id":1,"name":"loading /Users/mateusflores/Desktop/Flutter/Proyecto_APP_EMULADOR/proyecto_em/test/home_servicio/login_test.dart","suiteID":0,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":1}
+{"suite":{"id":2,"platform":"vm","path":"/Users/mateusflores/Desktop/Flutter/Proyecto_APP_EMULADOR/proyecto_em/test/smpvp_test.dart"},"type":"suite","time":15}
+{"test":{"id":3,"name":"loading /Users/mateusflores/Desktop/Flutter/Proyecto_APP_EMULADOR/proyecto_em/test/smpvp_test.dart","suiteID":2,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":15}
+{"count":2,"type":"allSuites","time":15}
+{"testID":1,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":1828}
+{"testID":3,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":2020}
+{"group":{"id":4,"suiteID":2,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":1,"line":null,"column":null,"url":null},"type":"group","time":2022}
+{"test":{"id":5,"name":"ping","suiteID":2,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":4,"column":3,"url":"file:///Users/mateusflores/Desktop/Flutter/Proyecto_APP_EMULADOR/proyecto_em/test/smpvp_test.dart"},"type":"testStart","time":2022}
+{"testID":5,"error":"Expected: <2>\n  Actual: <1>\n","stackTrace":"package:test_api                                   expect\npackage:flutter_test/src/widget_tester.dart 431:3  expect\nsmpvp_test.dart 6:5                                main.<fn>\n","isFailure":true,"type":"error","time":2074}
+{"testID":5,"result":"failure","skipped":false,"hidden":false,"type":"testDone","time":2074}
+{"success":false,"type":"done","time":2088}

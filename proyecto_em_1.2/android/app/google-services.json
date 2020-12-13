@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "71326468590",
+    "firebase_url": "https://sistema-monitoreo-pvp.firebaseio.com",
+    "project_id": "sistema-monitoreo-pvp",
+    "storage_bucket": "sistema-monitoreo-pvp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71326468590:android:bcdce2e2afdb500aa526ff",
+        "android_client_info": {
+          "package_name": "com.example.proyecto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "71326468590-gfn1bbb33huiu4svoni21vjboqep1ol0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.proyecto",
+            "certificate_hash": "6420e1f872da89b4c28ce10e5e6d68965c22fe63"
+          }
+        },
+        {
+          "client_id": "71326468590-vsvdv67udockgcotrcimn48tvcd3b0v2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdkfHP6YpZc-i9WJgse0p3EWrzEyvFH9c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "71326468590-vsvdv67udockgcotrcimn48tvcd3b0v2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
