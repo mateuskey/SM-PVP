@@ -103,10 +103,6 @@ class _CrearCuentaPageState extends State<CrearCuentaPage> {
                 SizedBox(height: 30.0),
                 _password(bloc),
                 SizedBox(height: 30.0),
-                _nombres(bloc),
-                SizedBox(height: 30.0),
-                _apellidos(bloc),
-                SizedBox(height: 30.0),
                 _inputRegistrar(bloc)
               ],
             ),
@@ -141,53 +137,53 @@ class _CrearCuentaPageState extends State<CrearCuentaPage> {
     );
   }
 
-  Widget _nombres(LoginBloc bloc) {
+  // Widget _nombres(LoginBloc bloc) {
 
-    return StreamBuilder(
-      stream: bloc.nombreStream,
-      builder: (BuildContext context, AsyncSnapshot snapshot) {
-        return Container(
-          padding: EdgeInsets.symmetric(horizontal: 20.0),
-          child: TextField(
-            textCapitalization: TextCapitalization.sentences,
-            decoration: InputDecoration(
-              icon: Icon(Icons.account_circle, color: Colors.blueAccent),
-              hintText: 'Nombres',
-              hintStyle: TextStyle(fontSize: 15),
-              labelText: 'Nombres',
-              labelStyle: TextStyle(fontSize: 15),
-              errorText: snapshot.error
-            ),
-            onChanged: bloc.changeNombre,
-          ),
-        );
-      },
-    );
-  }
+  //   return StreamBuilder(
+  //     stream: bloc.nombreStream,
+  //     builder: (BuildContext context, AsyncSnapshot snapshot) {
+  //       return Container(
+  //         padding: EdgeInsets.symmetric(horizontal: 20.0),
+  //         child: TextField(
+  //           textCapitalization: TextCapitalization.sentences,
+  //           decoration: InputDecoration(
+  //             icon: Icon(Icons.account_circle, color: Colors.blueAccent),
+  //             hintText: 'Nombres',
+  //             hintStyle: TextStyle(fontSize: 15),
+  //             labelText: 'Nombres',
+  //             labelStyle: TextStyle(fontSize: 15),
+  //             errorText: snapshot.error
+  //           ),
+  //           onChanged: bloc.changeNombre,
+  //         ),
+  //       );
+  //     },
+  //   );
+  //}
 
-  Widget _apellidos(LoginBloc bloc) {
+  // Widget _apellidos(LoginBloc bloc) {
 
-    return StreamBuilder(
-      stream: bloc.apellidoStream,
-      builder: (BuildContext context, AsyncSnapshot snapshot) {
-        return Container(
-          padding: EdgeInsets.symmetric(horizontal: 20.0),
-          child: TextField(
-            textCapitalization: TextCapitalization.sentences,
-            decoration: InputDecoration(
-              icon: Icon(Icons.account_circle, color: Colors.blueAccent),
-              hintText: 'Apellidos',
-              hintStyle: TextStyle(fontSize: 15),
-              labelText: 'Apellidos',
-              labelStyle: TextStyle(fontSize: 15),
-              errorText: snapshot.error
-            ),
-            onChanged: bloc.changeApellido,
-          ),
-        );
-      },
-    ); 
-  }
+  //   return StreamBuilder(
+  //     stream: bloc.apellidoStream,
+  //     builder: (BuildContext context, AsyncSnapshot snapshot) {
+  //       return Container(
+  //         padding: EdgeInsets.symmetric(horizontal: 20.0),
+  //         child: TextField(
+  //           textCapitalization: TextCapitalization.sentences,
+  //           decoration: InputDecoration(
+  //             icon: Icon(Icons.account_circle, color: Colors.blueAccent),
+  //             hintText: 'Apellidos',
+  //             hintStyle: TextStyle(fontSize: 15),
+  //             labelText: 'Apellidos',
+  //             labelStyle: TextStyle(fontSize: 15),
+  //             errorText: snapshot.error
+  //           ),
+  //           onChanged: bloc.changeApellido,
+  //         ),
+  //       );
+  //     },
+  //   ); 
+  // }
 
   Widget _password(LoginBloc bloc) {
     
@@ -234,7 +230,7 @@ class _CrearCuentaPageState extends State<CrearCuentaPage> {
 
   _register(LoginBloc bloc, BuildContext context) async{
     
-    final info = await usuarioProvider.nuevoUsuario(bloc.email, bloc.nombre, bloc.apellido, bloc.password);
+    final info = await usuarioProvider.nuevoUsuario(bloc.email, bloc.password);
 
     if (info['ok']) {
       Navigator.pushReplacementNamed(context, 'login');

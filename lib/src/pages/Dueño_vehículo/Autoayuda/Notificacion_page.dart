@@ -84,7 +84,7 @@ class _NotificacionPageState extends State<NotificacionPage> {
   Widget _textoinferior(){
 
     return Container(
-      padding: const EdgeInsets.only(top: 670.0, right: 60.0, left: 110.0),
+      padding: const EdgeInsets.only(top: 590.0, right: 100.0, left: 80.0),
       alignment: Alignment.topCenter,
       child: Container(
         child: Stack(

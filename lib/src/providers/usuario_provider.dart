@@ -36,12 +36,10 @@ class UsuarioProvider{
     }
   }
 
-  Future <Map<String, dynamic>> nuevoUsuario(String email, String password, String nombre, String apellido) async {
+  Future <Map<String, dynamic>> nuevoUsuario(String email, String password) async {
     final authData = {
       'email': email,
       'password': password,
-      'nombre': nombre,
-      'apellido': apellido,
       'returnSecureToken': true
     };
 

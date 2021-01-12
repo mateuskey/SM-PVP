@@ -26,7 +26,6 @@ class _AyudaModeloPageState extends State<AyudaModeloPage> {
       body: new Center(
         child: Container(
           child: Stack(
-            // mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               _fondoapp(),
               _texto(),
@@ -86,7 +85,7 @@ class _AyudaModeloPageState extends State<AyudaModeloPage> {
   Widget _textoinferior(){
 
     return Container(
-      padding: const EdgeInsets.only(top: 670.0, right: 50.0, left: 100.0),
+      padding: const EdgeInsets.only(top: 590.0, right: 50.0, left: 80.0),
       alignment: Alignment.topCenter,
       child: Container(
         child: Stack(
